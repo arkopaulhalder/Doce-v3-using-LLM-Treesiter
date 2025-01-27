@@ -1,0 +1,10 @@
+#this contains the curl file API testing endpoint :
+# Replace the directory file path with the file path of test_examples directory
+
+
+curl --location 'http://localhost:5000/process' \
+--header 'Content-Type: application/json' \
+--data '{
+    "directory": "C:/Users/KIIT/Downloads/doce-llm-v2-treesitter[1]/Document_treesiter\test_examples",
+    "include_inline": true
+}'
